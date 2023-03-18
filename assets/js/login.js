@@ -25,10 +25,7 @@ $(function(){
     })
 
 
-    $.ajaxPrefilter(function(option){
-        option.url = 'http://www.liulongbin.top:3007' + option.url
-        console.log(option.url)
-    })
+
 
 
     //监听注册表单的提交时间
@@ -62,8 +59,7 @@ $(function(){
                 }
                 layer.msg('登陆成功')
                 localStorage.setItem('token',res.token)
-                location.href = '/index.html'   
-                
+                location.href = '/index.html'     
             }
         })
     })
